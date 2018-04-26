@@ -2,7 +2,7 @@
   
         <div class="ui yellow inverted segment">
               <h1>Temperature</h1>
-                    <div class="ui red progress" data-value="10" data-total="20" id="temp">
+                    <div class="ui red progress" data-percent="<%=temp%>" id="temp">
                   <div class="bar"></div>
                   <div class="label"><h2><%=temp%> degree celcius</h2></div>
                   
@@ -13,12 +13,15 @@
         
         <div class="ui blue inverted segment">
               <h1>Humidity</h1>
-                    <div class="ui teal progress" data-percent="60" id="humid">
+                    <div class="ui teal progress" data-percent="<%=humid%>" id="humid">
                   <div class="bar"></div>
-                  <div class="label"></div>
+                  <div class="label"><%=humid%>%</div>
                     </div>
           
                     
-        </div>            
+        </div>       
+
+
+
                     
 <% include ./partials/footer%>
